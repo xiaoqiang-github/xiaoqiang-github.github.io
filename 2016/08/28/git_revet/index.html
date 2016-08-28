@@ -15,19 +15,25 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="工作中有时候想”还原”自己的代码，此时可以利用下面的几条命令来帮助自己…
+START还原本地文件(文件状态:Changes not staged for commit)当对某个文件进行更改后，发现改错了或者不想要了，想还原自己的更改，可以利用checkout:
+1$ git checkout xxx.java
+还原本地文件(文件状态:Changes to be committed)如果文件状态为C">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/08/27/hello-world/index.html">
+<meta property="og:title" content="使用Git之-----撤销代码">
+<meta property="og:url" content="http://yoursite.com/2016/08/28/git_revet/index.html">
 <meta property="og:site_name" content="xiaoqiang-github">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-08-27T15:15:09.437Z">
+<meta property="og:description" content="工作中有时候想”还原”自己的代码，此时可以利用下面的几条命令来帮助自己…
+START还原本地文件(文件状态:Changes not staged for commit)当对某个文件进行更改后，发现改错了或者不想要了，想还原自己的更改，可以利用checkout:
+1$ git checkout xxx.java
+还原本地文件(文件状态:Changes to be committed)如果文件状态为C">
+<meta property="og:updated_time" content="2016-08-28T10:35:18.796Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="使用Git之-----撤销代码">
+<meta name="twitter:description" content="工作中有时候想”还原”自己的代码，此时可以利用下面的几条命令来帮助自己…
+START还原本地文件(文件状态:Changes not staged for commit)当对某个文件进行更改后，发现改错了或者不想要了，想还原自己的更改，可以利用checkout:
+1$ git checkout xxx.java
+还原本地文件(文件状态:Changes to be committed)如果文件状态为C">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +65,7 @@ Quick">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hello World | xiaoqiang-github</title>
+<title>使用Git之-----撤销代码 | xiaoqiang-github</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -263,11 +269,11 @@ Quick">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-git_revet" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/27/hello-world/" class="article-date">
-      <time datetime="2016-08-27T15:14:35.616Z" itemprop="datePublished">2016-08-27</time>
+      <a href="/2016/08/28/git_revet/" class="article-date">
+      <time datetime="2016-08-28T10:05:36.668Z" itemprop="datePublished">2016-08-28</time>
 </a>
 
 
@@ -282,7 +288,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      使用Git之-----撤销代码
     </h1>
   
 
@@ -299,16 +305,16 @@ Quick">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>工作中有时候想”还原”自己的代码，此时可以利用下面的几条命令来帮助自己…</p>
+<h2 id="START"><a href="#START" class="headerlink" title="START"></a>START</h2><h3 id="还原本地文件-文件状态-Changes-not-staged-for-commit"><a href="#还原本地文件-文件状态-Changes-not-staged-for-commit" class="headerlink" title="还原本地文件(文件状态:Changes not staged for commit)"></a>还原本地文件(文件状态:Changes not staged for commit)</h3><p>当对某个文件进行更改后，发现改错了或者不想要了，想还原自己的更改，可以利用checkout:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout xxx.java</div></pre></td></tr></table></figure>
+<h3 id="还原本地文件-文件状态-Changes-to-be-committed"><a href="#还原本地文件-文件状态-Changes-to-be-committed" class="headerlink" title="还原本地文件(文件状态:Changes to be committed)"></a>还原本地文件(文件状态:Changes to be committed)</h3><p>如果文件状态为Changes to be committed，表示该文件将要被commit，如果想要还原这种状态的文件，需要先把reset为not staged状态：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git reset HEAD xxx.java</div><div class="line">$ git checkout xxx.java</div></pre></td></tr></table></figure></p>
+<h3 id="回退commitId"><a href="#回退commitId" class="headerlink" title="回退commitId"></a>回退commitId</h3><p>个人比较常用的场景为：将多个commit合并为1个commit进行提交,可以利用reset：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset a1b23c2 <span class="comment">#commit(a1b23c2)之前的代码将变为not staged状态</span></div></pre></td></tr></table></figure>
+<h3 id="回滚代码"><a href="#回滚代码" class="headerlink" title="回滚代码"></a>回滚代码</h3><p>如果发现某次提交的代码有问题，需要回滚代码，可以利用revert：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git git revert 6zz1ab757 <span class="comment">#commit(6zz1ab757)中改动的代码将被回滚，改动的代码被删除(代码都出bug了，还要它干啥~~)</span></div></pre></td></tr></table></figure></p>
+<h3 id="舍弃本地更改"><a href="#舍弃本地更改" class="headerlink" title="舍弃本地更改"></a>舍弃本地更改</h3><p>将代码回退到跟远端代码一致，可以利用:reset –hard</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset --hard crm/dev-crm <span class="comment">#将本地代码还原的跟远端代码一致(本地更改将被删除,注意备份~~)</span></div></pre></td></tr></table></figure>
+<h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2>
       
     </div>
     
@@ -316,13 +322,13 @@ Quick">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/08/27/hello-world/">Hello World</a></p>
+        <p><span>本文标题:</span><a href="/2016/08/28/git_revet/">使用Git之-----撤销代码</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">xiaoqiang</a></p>
-        <p><span>发布时间:</span>2016-08-27, 23:14:35</p>
-        <p><span>最后更新:</span>2016-08-27, 23:15:09</p>
+        <p><span>发布时间:</span>2016-08-28, 18:05:36</p>
+        <p><span>最后更新:</span>2016-08-28, 18:35:18</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/08/27/hello-world/" title="Hello World">http://yoursite.com/2016/08/27/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/27/hello-world/　　作者: xiaoqiang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/08/28/git_revet/" title="使用Git之-----撤销代码">http://yoursite.com/2016/08/28/git_revet/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/28/git_revet/　　作者: xiaoqiang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -334,12 +340,12 @@ Quick">
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/08/27/git_dev_op/">
-                    使用Git进行团队合作开发
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/08/27/git_teamWork/">
+                    使用Git之-----团队合作开发
                 </a>
             </div>
-        
         
     </nav>
 
@@ -349,7 +355,7 @@ Quick">
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#START"><span class="toc-number">1.</span> <span class="toc-text">START</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#还原本地文件-文件状态-Changes-not-staged-for-commit"><span class="toc-number">1.1.</span> <span class="toc-text">还原本地文件(文件状态:Changes not staged for commit)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#还原本地文件-文件状态-Changes-to-be-committed"><span class="toc-number">1.2.</span> <span class="toc-text">还原本地文件(文件状态:Changes to be committed)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#回退commitId"><span class="toc-number">1.3.</span> <span class="toc-text">回退commitId</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#回滚代码"><span class="toc-number">1.4.</span> <span class="toc-text">回滚代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#舍弃本地更改"><span class="toc-number">1.5.</span> <span class="toc-text">舍弃本地更改</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#END"><span class="toc-number">2.</span> <span class="toc-text">END</span></a></li></ol>
         
     </div>
     <style>
@@ -385,7 +391,7 @@ Quick">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hello World　| xiaoqiang-github　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"使用Git之-----撤销代码　| xiaoqiang-github　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -405,19 +411,19 @@ Quick">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/08/27/git_dev_op/" title="上一篇: 使用Git进行团队合作开发">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/08/27/git_teamWork/" title="下一篇: 使用Git之-----团队合作开发">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/git_dev_op/">使用Git进行团队合作开发</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/28/git_revet/">使用Git之-----撤销代码</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/git_teamWork/">使用Git之-----团队合作开发</a></li></ul>
 
 
 
